@@ -12,7 +12,6 @@ import {DashboardModule} from './dashboard/dashboard.module';
   declarations: [
     AppComponent,
     AppshellComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -20,8 +19,8 @@ import {DashboardModule} from './dashboard/dashboard.module';
     SharedModule,
     AppRoutingModule,
     DashboardModule,
-
   ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })

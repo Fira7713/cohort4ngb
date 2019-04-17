@@ -2,24 +2,32 @@ import {NgModule} from '@angular/core';
 import {
   NgbAccordionModule,
   NgbAlertModule,
-  NgbButtonsModule,
-  NgbCarouselModule,
-  NgbCollapseModule,
+  NgbButtonsModule, NgbCarouselModule,
+  NgbCollapseModule, NgbDatepickerModule,
   NgbPaginationModule
 } from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule,} from '@angular/forms';
 
 
-export const BOOT_STRAP = [
+export const BOOTSTRAP_MODULE = [
   NgbAlertModule,
   NgbButtonsModule,
   NgbAccordionModule,
   NgbCarouselModule,
   NgbCollapseModule,
   NgbPaginationModule,
+  NgbDatepickerModule,
+
 ];
 @NgModule({
-  imports: [BOOT_STRAP],
-  exports: [BOOT_STRAP],
+  imports: [
+    FormsModule,
+    BOOTSTRAP_MODULE
+  ],
+  exports: [
+    FormsModule,
+    BOOTSTRAP_MODULE,
+  ],
   declarations: [],
   providers: [],
   bootstrap: []
