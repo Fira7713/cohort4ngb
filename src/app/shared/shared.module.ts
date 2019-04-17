@@ -9,7 +9,7 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 
 
-export  const BOOSTRAP_MODULE= [
+export const BOOT_STRAP = [
   NgbAlertModule,
   NgbButtonsModule,
   NgbAccordionModule,
@@ -18,12 +18,12 @@ export  const BOOSTRAP_MODULE= [
   NgbPaginationModule,
 ];
 @NgModule({
-  imports:[BOOSTRAP_MODULE],
-  exports:[BOOSTRAP_MODULE],
-  declarations:[],
-  providers:[],
-  bootstrap:[]
+  imports: [BOOT_STRAP],
+  exports: [BOOT_STRAP],
+  declarations: [],
+  providers: [],
+  bootstrap: []
 })
-export class SharedModule{
+export class SharedModule {
 
 }
