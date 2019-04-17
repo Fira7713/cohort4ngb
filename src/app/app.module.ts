@@ -11,7 +11,8 @@ import {DashboardModule} from './dashboard/dashboard.module';
 @NgModule({
   declarations: [
     AppComponent,
-    AppshellComponent
+    AppshellComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -19,6 +20,7 @@ import {DashboardModule} from './dashboard/dashboard.module';
     SharedModule,
     AppRoutingModule,
     DashboardModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
